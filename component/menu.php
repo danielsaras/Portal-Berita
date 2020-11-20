@@ -40,6 +40,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="?page=module/kategori/index" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                KATEGORI
+              </p>
+            </a>
+          </li>
           
         </ul>
       </nav>
