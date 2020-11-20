@@ -1,3 +1,4 @@
+<?php include "component/koneksi.php"; ?>
 <?php include "component/header.php"; ?>
 
   <!-- Main Sidebar Container -->
