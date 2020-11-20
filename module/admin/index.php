@@ -21,34 +21,37 @@
           Data Admin
         </div>
         <div class="card-body">
-          <table class="table table-striped table-dark">
+          <a href ="?page=module/admin/tambah" class="btn btn-primary my-4">Tambah</a>
+          <table class="table table-striped table-dark" id="example1">
             <thead>
               <tr>
                 <th scope="col">NO</th>
                 <th scope="col">NAMA</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Email</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Aksi</th>
               </tr>
             </thead>
             <tbody>
+              <?php 
+                $data = $koneksi->query("SELECT * FROM tb_admin");
+                foreach ($data as $a => $value ) {
+              ?>
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td><?php echo $a + 1; ?></td>
+                <td><?php echo $value['admin_nama']; ?></td>
+                <td><?php echo $value['admin_email']; ?></td>
+                <td>
+                  <img src="img/admin/<?php echo $value['admin_foto']; ?>" alt="" style="width: 100px;">
+                </td>
+                <td>
+                  <a href="?page=module/admin/edit&admin_id=<?= $value['admin_id']?>" class="btn btn-warning">Edit</a>
+                  <a href="?page=module/admin/hapus&admin_id=<?= $value['admin_id']?>" class="btn btn-danger">Hapus</a>
+                </td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
+              <?php 
+                }
+              ?>
             </tbody>
           </table>
         </div>
