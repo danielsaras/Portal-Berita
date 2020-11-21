@@ -28,9 +28,10 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css"> 
+    <link rel="stylesheet" href="assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">  
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
+  <script src="assets/ckeditor/ckeditor.js"></script>
 <div class="wrapper">
 
   <!-- Navbar -->
