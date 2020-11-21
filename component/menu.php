@@ -24,7 +24,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="index.php" class="nav-link active">
+            <a href="index.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -45,6 +45,14 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 KATEGORI
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="?page=module/berita/index" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                BERITA
               </p>
             </a>
           </li>
